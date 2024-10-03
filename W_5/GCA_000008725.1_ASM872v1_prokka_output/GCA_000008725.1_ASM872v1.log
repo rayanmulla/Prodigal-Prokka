@@ -1,0 +1,233 @@
+[18:02:49] This is prokka 1.14.6
+[18:02:49] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[18:02:49] Homepage is https://github.com/tseemann/prokka
+[18:02:49] Local time is Thu Oct  3 18:02:49 2024
+[18:02:49] You are mullara
+[18:02:49] Operating system is linux
+[18:02:49] You have BioPerl 1.007002
+[18:02:49] System has 40 cores.
+[18:02:49] Will use maximum of 8 cores.
+[18:02:49] Annotating as >>> Bacteria <<<
+[18:02:49] Generating locus_tag from '/home/mullara/Week_5/GCA_000008725.1_ASM872v1_genomic.fna' contents.
+[18:02:49] Setting --locustag CNACAJDA from MD5 c7aca3dae1027712d02c82ebcb26f5ff
+[18:02:49] Creating new output folder: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output
+[18:02:49] Running: mkdir -p \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output
+[18:02:49] Using filename prefix: GCA_000008725.1_ASM872v1.XXX
+[18:02:49] Setting HMMER_NCPU=1
+[18:02:49] Writing log to: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.log
+[18:02:49] Command: /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/prokka --outdir /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output --prefix GCA_000008725.1_ASM872v1 /home/mullara/Week_5/GCA_000008725.1_ASM872v1_genomic.fna
+[18:02:49] Appending to PATH: /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin
+[18:02:49] Looking for 'aragorn' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/aragorn
+[18:02:49] Determined aragorn version is 001002 from 'ARAGORN v1.2.38 Dean Laslett'
+[18:02:49] Looking for 'barrnap' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/barrnap
+[18:02:49] Determined barrnap version is 000009 from 'barrnap 0.9'
+[18:02:49] Looking for 'blastp' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/blastp
+[18:02:49] Determined blastp version is 002010 from 'blastp: 2.10.1+'
+[18:02:49] Looking for 'cmpress' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/cmpress
+[18:02:49] Determined cmpress version is 001001 from '# INFERNAL 1.1.3 (Nov 2019)'
+[18:02:49] Looking for 'cmscan' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/cmscan
+[18:02:49] Determined cmscan version is 001001 from '# INFERNAL 1.1.3 (Nov 2019)'
+[18:02:49] Looking for 'egrep' - found /usr/bin/egrep
+[18:02:49] Looking for 'find' - found /usr/bin/find
+[18:02:49] Looking for 'grep' - found /usr/bin/grep
+[18:02:49] Looking for 'hmmpress' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/hmmpress
+[18:02:49] Determined hmmpress version is 003003 from '# HMMER 3.3.2 (Nov 2020); http://hmmer.org/'
+[18:02:49] Looking for 'hmmscan' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/hmmscan
+[18:02:49] Determined hmmscan version is 003003 from '# HMMER 3.3.2 (Nov 2020); http://hmmer.org/'
+[18:02:49] Looking for 'java' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/java
+[18:02:49] Looking for 'makeblastdb' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/makeblastdb
+[18:02:49] Determined makeblastdb version is 002010 from 'makeblastdb: 2.10.1+'
+[18:02:49] Looking for 'minced' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/minced
+[18:02:49] Determined minced version is 004002 from 'minced 0.4.2'
+[18:02:49] Looking for 'parallel' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/parallel
+[18:02:49] Determined parallel version is 20201122 from 'GNU parallel 20201122'
+[18:02:49] Looking for 'prodigal' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/prodigal
+[18:02:49] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[18:02:49] Looking for 'prokka-genbank_to_fasta_db' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/prokka-genbank_to_fasta_db
+[18:02:49] Looking for 'sed' - found /usr/bin/sed
+[18:02:49] Looking for 'tbl2asn' - found /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/bin/tbl2asn
+[18:02:49] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
+[18:02:49] Using genetic code table 11.
+[18:02:49] Loading and checking input file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_genomic.fna
+[18:02:49] Wrote 1 contigs totalling 1042519 bp.
+[18:02:49] Predicting tRNAs and tmRNAs
+[18:02:49] Running: aragorn -l -gc11  -w \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.fna
+[18:02:49] 1 tmRNA c[20666,21082] 92,160 AEPKAECEIISFADLEDLRVAA*
+[18:02:49] 2 tRNA-Asn c[42728,42802] 34 (gtt)
+[18:02:49] 3 tRNA-Pro c[68920,68996] 37 (tgg)
+[18:02:49] 4 tRNA-Thr [158661,158736] 35 (tgt)
+[18:02:49] 5 tRNA-Tyr [158743,158827] 36 (gta)
+[18:02:49] 6 tRNA-Ile c[202340,202415] 36 (gat)
+[18:02:49] 7 tRNA-Ala c[202420,202492] 34 (tgc)
+[18:02:49] 8 tRNA-Met c[234283,234356] 35 (cat)
+[18:02:49] 9 tRNA-Met c[234375,234447] 34 (cat)
+[18:02:49] 10 tRNA-Asp c[250288,250363] 36 (gtc)
+[18:02:49] 11 tRNA-Val c[250369,250443] 35 (tac)
+[18:02:49] 12 tRNA-Trp c[361866,361940] 35 (cca)
+[18:02:49] 13 tRNA-Thr c[363210,363281] 33 (ggt)
+[18:02:49] 14 tRNA-Met [368395,368469] 35 (cat)
+[18:02:49] 15 tRNA-Ser [409237,409325] 36 (cga)
+[18:02:49] 16 tRNA-Ser c[485242,485331] 36 (gga)
+[18:02:49] 17 tRNA-Phe c[489980,490056] 35 (gaa)
+[18:02:49] 18 tRNA-Leu [541062,541146] 35 (caa)
+[18:02:49] 19 tRNA-Arg [543862,543936] 35 (tcg)
+[18:02:49] 20 tRNA-Leu c[545988,546071] 36 (gag)
+[18:02:49] 21 tRNA-Ser c[574896,574986] 36 (gct)
+[18:02:49] 22 tRNA-Leu c[581986,582069] 34 (taa)
+[18:02:49] 23 tRNA-Leu [605751,605836] 36 (cag)
+[18:02:49] 24 tRNA-Arg c[682213,682287] 35 (acg)
+[18:02:49] 25 tRNA-Pro [718302,718378] 36 (ggg)
+[18:02:49] 26 tRNA-Ala c[725436,725508] 34 (ggc)
+[18:02:49] 27 tRNA-Arg [752670,752744] 35 (tct)
+[18:02:49] 28 tRNA-Thr [773399,773471] 34 (cgt)
+[18:02:49] 29 tRNA-Lys c[775264,775336] 34 (ttt)
+[18:02:49] 30 tRNA-Glu c[775352,775428] 38 (ttc)
+[18:02:49] 31 tRNA-Gly c[778591,778661] 33 (tcc)
+[18:02:49] 32 tRNA-Gly c[814540,814611] 33 (gcc)
+[18:02:49] 33 tRNA-His c[853554,853628] 35 (gtg)
+[18:02:49] 34 tRNA-Cys c[887936,888006] 33 (gca)
+[18:02:49] 35 tRNA-Gln [937061,937134] 34 (ttg)
+[18:02:49] 36 tRNA-Val c[979519,979595] 36 (gac)
+[18:02:49] 37 tRNA-Ser [984330,984415] 35 (tga)
+[18:02:49] 38 tRNA-Leu [1018110,1018193] 36 (tag)
+[18:02:49] Found 38 tRNAs
+[18:02:49] Predicting Ribosomal RNAs
+[18:02:49] Running Barrnap with 8 threads
+[18:02:50] 1 AE001273.1 854127 16S ribosomal RNA
+[18:02:50] 2 AE001273.1 855928 23S ribosomal RNA
+[18:02:50] 3 AE001273.1 858984 5S ribosomal RNA
+[18:02:50] 4 AE001273.1 876173 16S ribosomal RNA
+[18:02:50] 5 AE001273.1 877974 23S ribosomal RNA
+[18:02:50] 6 AE001273.1 881029 5S ribosomal RNA
+[18:02:50] Found 6 rRNAs
+[18:02:50] Skipping ncRNA search, enable with --rfam if desired.
+[18:02:50] Total of 43 tRNA + rRNA features
+[18:02:50] Searching for CRISPR repeats
+[18:02:51] Found 0 CRISPRs
+[18:02:51] Predicting coding sequences
+[18:02:51] Contigs total 1042519 bp, so using single mode
+[18:02:51] Running: prodigal -i \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.fna -c -m -g 11 -p single -f sco -q
+[18:02:52] Excluding CDS which overlaps existing RNA (tRNA) at AE001273.1:158716..158835 on - strand
+[18:02:53] Excluding CDS which overlaps existing RNA (tRNA) at AE001273.1:853464..853736 on + strand
+[18:02:53] Excluding CDS which overlaps existing RNA (rRNA) at AE001273.1:857821..858450 on - strand
+[18:02:53] Excluding CDS which overlaps existing RNA (rRNA) at AE001273.1:879867..880496 on - strand
+[18:02:53] Excluding CDS which overlaps existing RNA (tRNA) at AE001273.1:978856..979530 on + strand
+[18:02:53] Found 892 CDS
+[18:02:53] Connecting features back to sequences
+[18:02:53] Not using genus-specific database. Try --usegenus to enable it.
+[18:02:53] Annotating CDS, please be patient.
+[18:02:53] Will use 8 CPUs for similarity searching.
+[18:02:53] There are still 892 unannotated CDS left (started with 892)
+[18:02:53] Will use blast to search against /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/IS with 8 CPUs
+[18:02:53] Running: cat \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.IS\.tmp\.2364668\.faa | parallel --gnu --plain -j 8 --block 19774 --recstart '>' --pipe blastp -query - -db /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.IS\.tmp\.2364668\.blast 2> /dev/null
+[18:02:56] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.IS.tmp.2364668.faa
+[18:02:56] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.IS.tmp.2364668.blast
+[18:02:56] There are still 892 unannotated CDS left (started with 892)
+[18:02:56] Will use blast to search against /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/AMR with 8 CPUs
+[18:02:56] Running: cat \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.AMR\.tmp\.2364668\.faa | parallel --gnu --plain -j 8 --block 19774 --recstart '>' --pipe blastp -query - -db /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/AMR -evalue 9.99999999999999e-301 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.AMR\.tmp\.2364668\.blast 2> /dev/null
+[18:02:58] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.AMR.tmp.2364668.faa
+[18:02:58] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.AMR.tmp.2364668.blast
+[18:02:59] There are still 892 unannotated CDS left (started with 892)
+[18:02:59] Will use blast to search against /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/sprot with 8 CPUs
+[18:02:59] Running: cat \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.sprot\.tmp\.2364668\.faa | parallel --gnu --plain -j 8 --block 19774 --recstart '>' --pipe blastp -query - -db /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.sprot\.tmp\.2364668\.blast 2> /dev/null
+[18:03:09] Modify product: UPF0053 protein HI_0107 => hypothetical protein
+[18:03:09] Modify product: UPF0053 inner membrane protein YfjD => hypothetical protein
+[18:03:09] Modify product: Uncharacterized ABC transporter ATP-binding protein YbiT => putative ABC transporter ATP-binding protein YbiT
+[18:03:09] Modify product: Probable ABC transporter arginine-binding protein ArtJ => putative ABC transporter arginine-binding protein ArtJ
+[18:03:09] Modify product: Bifunctional protein FolD => Bifunctional protein FolD protein
+[18:03:09] Modify product: GTP cyclohydrolase 1 type 2 homolog => GTP cyclohydrolase 1 type 2 
+[18:03:09] Modify product: Probable D,D-dipeptide transport ATP-binding protein DdpF => putative D,D-dipeptide transport ATP-binding protein DdpF
+[18:03:09] Modify product: UPF0301 protein YqgE => hypothetical protein
+[18:03:09] Modify product: Glycogen operon protein GlgX homolog => Glycogen operon protein GlgX 
+[18:03:09] Modify product: Probable cytosol aminopeptidase => putative cytosol aminopeptidase
+[18:03:09] Modify product: Probable outer membrane protein PmpA => putative outer membrane protein PmpA
+[18:03:09] Modify product: Probable outer membrane protein PmpB => putative outer membrane protein PmpB
+[18:03:09] Modify product: Probable outer membrane protein PmpC => putative outer membrane protein PmpC
+[18:03:09] Modify product: Probable type II secretion system protein HxcR => putative type II secretion system protein HxcR
+[18:03:09] Modify product: Uncharacterized peptidase SA1530 => putative peptidase
+[18:03:09] Modify product: Protein CPn_0803/CP_1068/CPj0803/CpB0832 => Protein/CP_1068/CPj0803/CpB0832
+[18:03:09] Modify product: Probable oxidoreductase CT_610 => putative oxidoreductase CT_610
+[18:03:09] Modify product: Probable transcriptional regulatory protein aq_1575 => putative transcriptional regulatory protein
+[18:03:09] Modify product: UPF0176 protein SP_0095 => hypothetical protein
+[18:03:09] Modify product: Uncharacterized protein CT_666 => putative protein CT_666
+[18:03:09] Modify product: Probable uridylyltransferase SA1974 => putative uridylyltransferase
+[18:03:09] Modify product: Probable secretion system apparatus ATP synthase SsaN => putative secretion system apparatus ATP synthase SsaN
+[18:03:09] Modify product: Probable cadmium-transporting ATPase => putative cadmium-transporting ATPase
+[18:03:09] Modify product: UPF0098 protein CT_736 => hypothetical protein
+[18:03:09] Modify product: Probable peptidoglycan glycosyltransferase FtsW => putative peptidoglycan glycosyltransferase FtsW
+[18:03:09] Modify product: Probable outer membrane protein PmpD => putative outer membrane protein PmpD
+[18:03:09] Modify product: Probable ATP synthase YscN => putative ATP synthase YscN
+[18:03:09] Modify product: Uncharacterized protein CT_671 => putative protein CT_671
+[18:03:09] Modify product: Probable ATP-dependent transporter SufC => putative ATP-dependent transporter SufC
+[18:03:09] Modify product: Probable cysteine desulfurase => putative cysteine desulfurase
+[18:03:09] Modify product: UPF0111 protein HI_1603 => hypothetical protein
+[18:03:10] Modify product: UPF0056 inner membrane protein YhgN => hypothetical protein
+[18:03:10] Modify product: Probable outer membrane protein PmpE => putative outer membrane protein PmpE
+[18:03:10] Modify product: Probable outer membrane protein PmpF => putative outer membrane protein PmpF
+[18:03:10] Modify product: Probable outer membrane protein PmpG => putative outer membrane protein PmpG
+[18:03:10] Modify product: Probable outer membrane protein PmpH => putative outer membrane protein PmpH
+[18:03:10] Modify product: Probable outer membrane protein PmpI => putative outer membrane protein PmpI
+[18:03:10] Cleaned 37 /product names
+[18:03:10] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.sprot.tmp.2364668.faa
+[18:03:10] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.sprot.tmp.2364668.blast
+[18:03:10] There are still 440 unannotated CDS left (started with 892)
+[18:03:10] Will use hmmer3 to search against /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/hmm/HAMAP.hmm with 8 CPUs
+[18:03:10] Running: cat \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.HAMAP\.hmm\.tmp\.2364668\.faa | parallel --gnu --plain -j 8 --block 8972 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /ibex/sw/csi/prokka/1.14.5/conda2/miniconda2/db/hmm/HAMAP.hmm /dev/stdin > \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.HAMAP\.hmm\.tmp\.2364668\.hmmer3 2> /dev/null
+[18:03:13] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.HAMAP.hmm.tmp.2364668.faa
+[18:03:13] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.HAMAP.hmm.tmp.2364668.hmmer3
+[18:03:13] Labelling remaining 347 proteins as 'hypothetical protein'
+[18:03:13] Possible /pseudo 'Cardiolipin synthase A' at AE001273.1 position 179440
+[18:03:13] Found 496 unique /gene codes.
+[18:03:13] Fixed 2 duplicate /gene - sctC_1 sctC_2
+[18:03:13] Fixed 2 duplicate /gene - gyrA_1 gyrA_2
+[18:03:13] Fixed 2 duplicate /gene - tlcA_1 tlcA_2
+[18:03:13] Fixed 2 duplicate /gene - mntB_1 mntB_2
+[18:03:13] Fixed 2 duplicate /gene - dxs_1 dxs_2
+[18:03:13] Fixed 2 duplicate /gene - oppA_1 oppA_2
+[18:03:13] Fixed 2 duplicate /gene - groL_1 groL_2
+[18:03:13] Fixed 2 duplicate /gene - oppD_1 oppD_2
+[18:03:13] Fixed 4 duplicate /gene - clsA_1 clsA_2 clsA_3 clsA_4
+[18:03:13] Fixed 2 duplicate /gene - gyrB_1 gyrB_2
+[18:03:13] Fixed 2 duplicate /gene - pgsA_1 pgsA_2
+[18:03:13] Fixed 2 duplicate /gene - dinG_1 dinG_2
+[18:03:13] Fixed 2 duplicate /gene - dnaA_1 dnaA_2
+[18:03:13] Fixed 2 duplicate /gene - pfp_1 pfp_2
+[18:03:13] Fixed 2 duplicate /gene - pknD_1 pknD_2
+[18:03:13] Fixed 2 duplicate /gene - tyrP_1 tyrP_2
+[18:03:13] Fixed 2 duplicate /gene - pdhC_1 pdhC_2
+[18:03:13] Fixed 2 duplicate /gene - efp_1 efp_2
+[18:03:13] Fixed 2 duplicate /gene - alsT_1 alsT_2
+[18:03:13] Fixed 19 colliding /gene names.
+[18:03:13] Adding /locus_tag identifiers
+[18:03:13] Assigned 936 locus_tags to CDS and RNA features.
+[18:03:13] Writing outputs to /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/
+[18:03:13] Generating annotation statistics file
+[18:03:13] Generating Genbank and Sequin files
+[18:03:13] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.err -i \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.fsa 2> /dev/null
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/errorsummary.val
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.dr
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.fixedproducts
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.ecn
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.val
+[18:03:15] Repairing broken .GBK output that tbl2asn produces...
+[18:03:15] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.gbf > \/home\/mullara\/Week_5\/GCA_000008725\.1_ASM872v1_prokka_output\/GCA_000008725\.1_ASM872v1\.gbk
+[18:03:15] Deleting unwanted file: /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.gbf
+[18:03:15] Output files:
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.log
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.fna
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.gff
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.faa
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.ffn
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.tbl
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.fsa
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.tsv
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.txt
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.sqn
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.gbk
+[18:03:15] /home/mullara/Week_5/GCA_000008725.1_ASM872v1_prokka_output/GCA_000008725.1_ASM872v1.err
+[18:03:15] Annotation finished successfully.
+[18:03:15] Walltime used: 0.43 minutes
+[18:03:15] If you use this result please cite the Prokka paper:
+[18:03:15] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[18:03:15] Type 'prokka --citation' for more details.
+[18:03:15] Thank you, come again.

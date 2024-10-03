@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Specify the directory containing the genome files
+genome_directory="/home/mullara/Week_5"
+
+for genome_file in "$genome_directory"/GCA_*.fna; do 
+    if [[ -f "$genome_file" ]]; then
+        genome_filename=$(basename "$genome_file")
+        prokka_output_dir="${genome_directory}/${genome_filename%_genomic.fna}_prokka_output"
+        
+        # Run Prokka annotation
+        prokka --outdir "$prokka_output_dir" --prefix "${genome_filename%_genomic.fna}" "$genome_file"
+
+        prokka_output_file="$prokka_output_dir/${genome_filename%_genomic.fna}.txt"
+
+        if [[ -f "$prokka_output_file" ]]; then
+            cds_count=$(grep -w "CDS" "$prokka_output_file" | awk '{print $2}')
+            echo "Genome: $genome_filename - Number of CDS annotated: $cds_count"
+        else 
+            echo "Prokka output file not found for $genome_filename"
+        fi
+    else 
+        echo "No genomic file found for $genome_file"
+    fi 
+done

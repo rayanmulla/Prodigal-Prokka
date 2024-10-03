@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sequence="KVRMFTSELDIMLSVNGPADQIKYFCRHWT*"
+
+# Calculate the number of amino acids excluding the stop codon
+num_amino_acids=$(( ${#sequence} - 1 ))
+
+echo "Number of amino acids: $num_amino_acids"
+
+# Calculate the number of bases in the ORF including the stop codon
+num_bases=$(( num_amino_acids * 3 + 3 ))
+echo "Number of bases in ORF: $num_bases"

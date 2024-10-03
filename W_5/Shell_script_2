@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Correct the paths and arguments for the prodigal command
+prodigal -i /home/mullara/Week_5/GCA_000006745.1_ASM674v1_genomic.fna -o genes_output.gbk -a proteins_output.faa
+
+# Counting the number of "CDS" entries in the output file and assigning it to a variable
+gene_count=$(grep -c "CDS" genes_output.gbk)
+
+# Outputting the number of genes annotated
+echo "Number of genes annotated: $gene_count"

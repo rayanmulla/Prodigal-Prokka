@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Set the base directory path where the species directories (GCA_*) are located
+base_dir="/home/mullara/Week_5/"
+
+highest_gene_count=0
+top_genome=""
+
+for species_dir in "$base_dir"/GCA_*; do
+    if [[ -d $species_dir ]]; then
+        # Locate the genome file within each directory
+        sequence_file=$(find "$species_dir" -name "*_genomic.fna" -print -quit)
+        
+        if [[ -f $sequence_file ]]; then
+            prodigal_results="${species_dir}_genetic_map.gbk"
+
+            # Execute Prodigal for gene prediction
+            prodigal -i "$sequence_file" -o "$prodigal_results" -a "${species_dir}_amino_acid_sequences.faa"
+
+            # Count the number of CDS entries in the GenBank output
+            cds_count=$(grep -c "CDS" "$prodigal_results")
+            echo "Species: $sequence_file - Gene Count: $cds_count"
+
+            # Determine if the current genome has the most genes
+            if [[ $cds_count -gt $highest_gene_count ]]; then
+                highest_gene_count=$cds_count
+                top_genome="$sequence_file"
+            fi
+        else
+            echo "No genome data located in $species_dir"
+        fi
+    fi
+done
+
+echo "Genome with the most genes: $top_genome featuring $highest_gene_count genes."

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Iterate over each directory that ends with "_prokka_output"
+for prokka_dir in *_prokka_output; do 
+    # Find the .txt file within each prokka output directory
+    txt_file=$(find "$prokka_dir" -name "*.txt" -print -quit)
+
+    # Check if the .txt file is found
+    if [[ -f "$txt_file" ]]; then 
+        # Extract the CDS count from the file
+        cds_count=$(grep -w "CDS:" "$txt_file" | awk '{print $2}')
+        echo "Directory: $prokka_dir - CDS count: $cds_count"
+    else 
+        echo "No .txt file found in $prokka_dir"
+    fi 
+done

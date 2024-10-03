@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Step 1: Combine all .gbk files into one file
+find . -type f -name "*.gbk" -exec cat {} + > combined_annotations.gbk
+
+# Step 2: Extract unique gene names and store them
+grep "/gene=" combined_annotations.gbk | cut -d '=' -f2 | tr -d '"' | sort | uniq > unique_gene_names.txt
+
+# Step 3: Output the count of unique gene names and the first five names
+gene_count=$(wc -l < unique_gene_names.txt)
+echo "Total unique gene names: $gene_count"
+echo "First five unique gene names:"
+head -n 5 unique_gene_names.txt
+
